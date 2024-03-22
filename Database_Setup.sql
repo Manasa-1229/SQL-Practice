@@ -92,7 +92,9 @@ CREATE TABLE IF NOT EXISTS PaymentMethods (
 INSERT INTO Users (username, email, password) VALUES
 ('AliceWonder', 'alice@example.com', 'alicepass'),
 ('BobBuilder', 'bob@example.com', 'bobpass'),
-('CharlieDay', 'charlie@example.com', 'charliepass');
+('CharlieDay', 'charlie@example.com', 'charliepass'),
+('john_doe', 'john.doe@example.com', 'johnpass'),
+('jane_doe', 'jane.doe@example.com', 'janepass');
 
 INSERT INTO Categories (name, description) VALUES
 ('Electronics', 'Gadgets, devices, and more'),
