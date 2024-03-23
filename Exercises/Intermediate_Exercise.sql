@@ -44,4 +44,26 @@
 -- Write your query here:
 
 
+-- Exercise 11: Most Popular Product Categories
+-- Objective: Write a SQL query to find the three most popular product categories based on the number of orders. List the category name and the number of orders.
 
+
+SELECT c.name, COUNT(o.order_id) AS order_count FROM Categories c JOIN Products p ON c.category_id = p.category_id JOIN OrderDetails od ON p.product_id = od.product_id JOIN Orders o ON od.order_id = o.order_id GROUP BY c.name ORDER BY order_count DESC LIMIT 3;
+Exercise 12: Users Who Have Not Reviewed Their Purchases
+Objective: Write a SQL query to list users who have made at least one order but have not left any reviews. Display the username.
+
+sql
+Copy code
+SELECT DISTINCT u.username FROM Users u JOIN Orders o ON u.user_id = o.user_id LEFT JOIN Reviews r ON u.user_id = r.user_id WHERE r.review_id IS NULL;
+Exercise 13: Total Revenue per Category
+Objective: Write a SQL query to calculate the total revenue generated from each category. List the category name and total revenue.
+
+sql
+Copy code
+SELECT c.name AS category_name, SUM(od.quantity * od.price_at_time_of_purchase) AS total_revenue FROM Categories c JOIN Products p ON c.category_id = p.category_id JOIN OrderDetails od ON p.product_id = od.product_id GROUP BY c.name;
+Exercise 14: Products with Above Average Price
+Objective: Write a SQL query to list products with a price above the average price of all products. Include the product name and price.
+
+sql
+Copy code
+SELECT name, price FROM Products WHERE price > (SELECT AVG(price) FROM Products);
