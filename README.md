@@ -30,7 +30,7 @@ Here's a quick overview of the repository structure:
 
 ## Contributing
 
-Your contributions are what make this community amazing. If you have any exercises to add, solutions to improve, or resources to share, please feel free to contribute! Check out the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute.
+Your contributions are what make this community amazing. If you have any exercises to add, solutions to improve, or resources to share, please feel free to contribute! Check out the [CONTRIBUTING.md](Contributing.md) file for guidelines on how to contribute.
 
 ## Feedback
 
