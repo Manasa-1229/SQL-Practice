@@ -423,6 +423,61 @@ GROUP BY CustomerName
 HAVING AverageDaysBetweenOrders IS NOT NULL
 ORDER BY AverageDaysBetweenOrders;
 
+-- Output: 
+| CustomerName | AverageDaysBetweenOrders |
+| ------------ | ------------------------ |
+| Amrish       | 6.3894                   |
+| Krithika     | 6.4798                   |
+| Shah         | 6.5093                   |
+| Arutra       | 6.6636                   |
+| Sudeep       | 6.6699                   |
+| Verma        | 6.6959                   |
+| Vidya        | 6.7523                   |
+| Komal        | 6.7902                   |
+| Suresh       | 6.8009                   |
+| Surya        | 6.8894                   |
+| Harish       | 6.9227                   |
+| Hussain      | 7.0242                   |
+| Malik        | 7.035                    |
+| Peer         | 7.0493                   |
+| Veronica     | 7.0545                   |
+| Veena        | 7.0637                   |
+| Adavan       | 7.0735                   |
+| Ridhesh      | 7.0837                   |
+| Mathew       | 7.0931                   |
+| Arvind       | 7.1139                   |
+| Ravi         | 7.1256                   |
+| Jonas        | 7.1269                   |
+| Muneer       | 7.1527                   |
+| Vinne        | 7.1881                   |
+| Yusuf        | 7.2                      |
+| Alan         | 7.2183                   |
+| Sharon       | 7.2239                   |
+| Haseena      | 7.2239                   |
+| Roshan       | 7.23                     |
+| Shree        | 7.2714                   |
+| Ram          | 7.3061                   |
+| Willams      | 7.3454                   |
+| Amy          | 7.3795                   |
+| James        | 7.3827                   |
+| Sheeba       | 7.4433                   |
+| Akash        | 7.4462                   |
+| Aditi        | 7.4731                   |
+| Ganesh       | 7.474                    |
+| Rumaiza      | 7.4845                   |
+| Yadav        | 7.5435                   |
+| Ramesh       | 7.6043                   |
+| Sabeela      | 7.6738                   |
+| Sudha        | 7.6968                   |
+| Esther       | 7.7234                   |
+| Vince        | 7.7433                   |
+| Anu          | 7.7514                   |
+| Sundar       | 7.8118                   |
+| Kumar        | 8.0111                   |
+| Jackson      | 8.0166                   |
+| Hafiz        | 8.2139                   |
+    
+
 -- Customers by Region and their Average Sales Amount
 SELECT 
     Region,
