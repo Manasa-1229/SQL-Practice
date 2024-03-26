@@ -34,3 +34,5 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
+
+-- If above Script doesn't work you can directly import the using Sql workbench create Schema locating the file on your pc.Make sure you save excel or csv file should be in Just CSV format. 
